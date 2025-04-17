@@ -2,16 +2,22 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfólio - Edson Gustavo</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
     :root {
       --azul: #2563eb;
       --azul-escuro: #1e40af;
       --cinza: #f3f4f6;
-      --texto: #333333;
+      --texto: #333;
+      --branco: #fff;
     }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -19,99 +25,133 @@
       background-color: var(--cinza);
       color: var(--texto);
     }
+
     nav {
-      background: white;
+      background: var(--branco);
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      padding: 15px;
+      padding: 15px 20px;
       position: fixed;
       width: 100%;
       top: 0;
       z-index: 100;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
     }
+
     nav a {
       color: var(--azul);
       text-decoration: none;
-      margin: 0 20px;
-      font-weight: 500;
+      font-weight: 600;
     }
+
     header {
       background: linear-gradient(135deg, var(--azul), var(--azul-escuro));
       color: white;
-      padding: 80px 20px;
+      padding: 80px 20px 100px;
       text-align: center;
     }
+
     header img {
       width: 150px;
+      height: 150px;
       border-radius: 50%;
       border: 4px solid white;
-      margin-bottom: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
+
     header h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
+      margin-top: 15px;
+      font-size: 2.2rem;
     }
+
     header p {
-      font-size: 18px;
-      opacity: 0.9;
+      margin: 10px 0;
+      font-size: 1.1rem;
     }
+
+    .btn-curriculo {
+      background: var(--branco);
+      color: var(--azul-escuro);
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .btn-curriculo:hover {
+      background: #e0e7ff;
+    }
+
     section {
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
     }
-    .projeto, .experiencia {
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      transition: transform 0.3s;
-    }
-    .projeto:hover, .experiencia:hover {
-      transform: translateY(-5px);
-    }
-    h2 {
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
       color: var(--azul-escuro);
       border-bottom: 2px solid var(--azul);
       padding-bottom: 5px;
-      margin-bottom: 20px;
     }
+
+    .card {
+      background: var(--branco);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: var(--azul);
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    form button:hover {
+      background: var(--azul-escuro);
+    }
+
     footer {
       background: #333;
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 50px;
     }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    form button {
-      background: var(--azul);
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .btn-curriculo {
-      background: var(--azul-escuro);
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 15px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 8px;
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -119,13 +159,14 @@
 
   <nav>
     <a href="#sobre">Sobre</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#experiencias">Experiências</a>
+    <a href="#formacao">Formação</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#cursos">Cursos</a>
     <a href="#contato">Contato</a>
   </nav>
 
   <header>
-    <img src="foto_perfil.jpg" alt="Foto de Perfil">
+    <img src="foto_perfil.jpg" alt="Foto de Perfil" />
     <h1>Edson Gustavo</h1>
     <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
     <a class="btn-curriculo" href="Edson%20Curr%C3%ADculo.pdf" download>📄 Baixar Currículo</a>
@@ -133,41 +174,58 @@
 
   <section id="sobre">
     <h2>Sobre Mim</h2>
-    <p>Sou estudante de ADS e este é meu portfólio pessoal desenvolvido para a disciplina de Prática Profissional. Estou aprendendo HTML, CSS, JavaScript e muito mais!</p>
+    <p>Olá! Sou Edson Gustavo Silva Pereira, estudante da Universidade Presbiteriana Mackenzie. Tenho formação técnica em administração e estou focado em tecnologia e análise de dados. Já atuei com marketing e atualmente trabalho com TI corporativa, análise de sistemas, segurança e governança.</p>
   </section>
 
-  <section id="projetos">
-    <h2>Projetos</h2>
-    <div class="projeto">
-      <h3>Sistema de Cadastro Simples</h3>
-      <p>Projeto feito em HTML e JavaScript simulando um cadastro de usuários.</p>
+  <section id="formacao">
+    <h2>Formação Acadêmica</h2>
+    <div class="card">
+      <p><strong>Técnico em Administração</strong><br>ETEC Professor Adhemar Batista Heméritas (2019 - 2020)</p>
     </div>
-    <div class="projeto">
-      <h3>Portfólio Online</h3>
-      <p>Você está vendo este projeto agora mesmo 😊.</p>
+    <div class="card">
+      <p><strong>Relações Internacionais</strong><br>UNIFESP (matrícula trancada)</p>
+    </div>
+    <div class="card">
+      <p><strong>Análise e Desenvolvimento de Sistemas</strong><br>Universidade Presbiteriana Mackenzie (2022 - atual)</p>
     </div>
   </section>
 
-  <section id="experiencias">
-    <h2>Experiências</h2>
-    <div class="experiencia">
-      <h3>Projeto da Faculdade</h3>
-      <p>Aplicação dos conhecimentos adquiridos em aula em um projeto real.</p>
+  <section id="experiencia">
+    <h2>Experiência Profissional</h2>
+    <div class="card">
+      <p><strong>SulAmérica Seguros</strong> – Assistente de Marketing JR (11/2021 a 12/2022)</p>
+      <p>Atuação com diretoria, campanhas de publicidade, mídia, eventos e interface entre setores.</p>
     </div>
+    <div class="card">
+      <p><strong>Volkswagen Financial Services</strong> – Assistente Administrativo de TI SR (01/2023 - atual)</p>
+      <p>Governança em TI, arquitetura, segurança da informação, KPIs de build/code, bancos Oracle, documentação LeanIX, SAP, e treinamentos internos.</p>
+    </div>
+  </section>
+
+  <section id="cursos">
+    <h2>Cursos & Certificações</h2>
+    <ul>
+      <li>Inglês Básico – Open English (Cursando)</li>
+      <li>Scrum Foundation – CertiProf (40h)</li>
+      <li>Pacote Office Intermediário – ETEC (40h)</li>
+      <li>Técnicas Administrativas e Comportamentais – Saber/SP (1 ano)</li>
+      <li>Banco de Dados – Alura (8h)</li>
+      <li>Google Cloud – Google + Mackenzie (730h)</li>
+    </ul>
   </section>
 
   <section id="contato">
     <h2>Contato</h2>
     <form>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea placeholder="Sua mensagem" rows="4" required></textarea>
       <button type="submit">Enviar</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Edson Gustavo. Todos os direitos reservados.</p>
+    <p>© 2025 Edson Gustavo • <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | <a href="https://github.com/EdsonMackenzie" target="_blank">GitHub</a></p>
   </footer>
 
 </body>
