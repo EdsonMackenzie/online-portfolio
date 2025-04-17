@@ -49,7 +49,7 @@
             margin: 40px auto;
             padding: 0 20px;
         }
-        .projeto {
+        .projeto, .experiencia {
             background: white;
             border-radius: 10px;
             padding: 20px;
@@ -57,7 +57,7 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             transition: transform 0.3s;
         }
-        .projeto:hover {
+        .projeto:hover, .experiencia:hover {
             transform: translateY(-5px);
         }
         footer {
@@ -81,12 +81,29 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        .btn-curriculo {
+            background: var(--azul-escuro);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
     <!-- Barra de Navegação -->
     <nav>
         <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#formacao">Formação</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
     </nav>
@@ -101,10 +118,63 @@
     <!-- Seção Sobre -->
     <section id="sobre">
         <h2>Sobre Mim</h2>
-        <p>Graduando em Análise e Desenvolvimento de Sistemas na Universidade Presbiteriana Mackenzie. Apaixonado por tecnologia e desenvolvimento web.</p>
-        <a href="curriculo.pdf" download class="btn-curriculo">
-            <i class="fas fa-download"></i> Baixar Currículo
+        <p>
+            Analista de TI em formação pela Universidade Presbiteriana Mackenzie, com experiência em:<br>
+            • Governança de TI (Arquitetura, Segurança da Informação, Identity and Access Management)<br>
+            • Gestão de bancos de dados (Oracle, LeanIX)<br>
+            • Criação de treinamentos e workshops técnicos<br>
+            • Scrum Foundation Certified (CertiProf)
+        </p>
+        <a href="Edson Currículo.pdf" download class="btn-curriculo">
+            <i class="fas fa-download"></i> Baixar Currículo Completo
         </a>
+    </section>
+
+    <!-- Seção Experiência -->
+    <section id="experiencia">
+        <h2>Experiência Profissional</h2>
+        <div class="experiencia">
+            <h3>Volkswagen Financial Services</h3>
+            <p><strong>Cargo:</strong> Assistente Administrativo de TI Sênior (2023)</p>
+            <ul>
+                <li>Governança de TI: Arquitetura, Segurança da Informação e Compliance</li>
+                <li>Monitoramento de bancos de dados Oracle e relatórios para matriz na Alemanha</li>
+                <li>Desenvolvimento de treinamentos técnicos para equipe de TI</li>
+                <li>Gestão de pagamentos de licenças via SAP</li>
+            </ul>
+        </div>
+        <div class="experiencia">
+            <h3>SulAmérica Seguros</h3>
+            <p><strong>Cargo:</strong> Assistente de Marketing Jr (2021-2022)</p>
+            <ul>
+                <li>Gestão de campanhas publicitárias e posicionamento de marca</li>
+                <li>Interface entre diretoria e áreas operacionais</li>
+                <li>Organização de eventos corporativos</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção Formação -->
+    <section id="formacao">
+        <h2>Formação Acadêmica</h2>
+        <div class="experiencia">
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p><strong>Universidade Presbiteriana Mackenzie</strong> (2022 - Atual)</p>
+        </div>
+        <div class="experiencia">
+            <h3>Técnico em Administração</h3>
+            <p><strong>ETEC Professor Adhemar Batista Heméritas</strong> (2019-2020)</p>
+        </div>
+        
+        <h3 style="margin-top: 30px;">Cursos Complementares</h3>
+        <div class="experiencia">
+            <ul>
+                <li><strong>Scrum Foundation Professional Certificate</strong> - CertiProf (40h)</li>
+                <li><strong>Banco de Dados</strong> - Alura (8h)</li>
+                <li><strong>Google Cloud</strong> - Google/Mackenzie (40h)</li>
+                <li><strong>Pacote Office Intermediário</strong> - ETEC/SP (40h)</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Seção Projetos -->
@@ -120,15 +190,18 @@
     <!-- Seção Contato -->
     <section id="contato">
         <h2>Contato</h2>
-        <form action="https://formsubmit.co/seu-email@exemplo.com" method="POST">
+        <form action="https://formsubmit.co/edson.pereira99@outlook.com" method="POST">
             <input type="text" name="name" placeholder="Seu nome" required>
             <input type="email" name="email" placeholder="Seu e-mail" required>
             <textarea name="message" placeholder="Sua mensagem" rows="5"></textarea>
             <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
         </form>
         <div style="margin-top: 20px;">
-            <a href="https://github.com/EdsonMackenzie" target="_blank" style="color: var(--azul);">
+            <a href="https://github.com/EdsonMackenzie" target="_blank" style="color: var(--azul); margin-right: 15px;">
                 <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="mailto:edson.pereira99@outlook.com" style="color: var(--azul);">
+                <i class="fas fa-envelope"></i> E-mail
             </a>
         </div>
     </section>
@@ -136,12 +209,13 @@
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2023 Edson Gustavo. Todos os direitos reservados.</p>
+        <p>Telefone: (11) 94310-2043</p>
     </footer>
 
     <!-- Scripts -->
     <script>
         // Efeito de digitação
-        const texts = ["Desenvolvedor Front-End", "Estudante de ADS", "Criativo"];
+        const texts = ["Analista de TI", "Especialista em Governança", "Scrum Certified"];
         let count = 0;
         let index = 0;
         let currentText = "";
