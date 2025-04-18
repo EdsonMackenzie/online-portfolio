@@ -1,14 +1,42 @@
-# Portfólio Profissional
+# 💼 Portfólio Profissional - Edson Gustavo
 
-![Preview do Site](foto_perfil.jpg)
+![Perfil](foto_perfil.jpg)
 
-Site pessoal desenvolvido para a disciplina de Prática Profissional em ADS.
+Site pessoal desenvolvido para a disciplina de **Prática Profissional em Análise e Desenvolvimento de Sistemas**.
 
-## 🛠️ Tecnologias
+---
+
+## 🚀 Tecnologias Utilizadas
+
 - HTML5
 - CSS3
 - JavaScript
+- Git e GitHub
 
-## 🔗 Links
-- [Acesse o Site](https://EdsonMackenzie.github.io/online-portfolio)
-- [Repositório no GitHub](https://github.com/EdsonMackenzie/online-portfolio)
+---
+
+## 🌐 Acesse o site publicado
+
+🔗 [Clique aqui para ver o portfólio online](https://edsonmackenzie.github.io/online-portfolio/)
+
+---
+
+## 📎 Arquivos Importantes
+
+- [Guia do Usuário](https://github.com/EdsonMackenzie/online-portfolio/blob/main/GUIA.md)
+- [Currículo em PDF](https://github.com/EdsonMackenzie/online-portfolio/blob/main/Edson%20Curr%C3%ADculo.pdf)
+- [Diagrama de Implantação](https://github.com/EdsonMackenzie/online-portfolio/blob/main/diagrama_implantacao.png)
+
+---
+
+## 📹 Vídeo de Demonstração
+
+🖥️ Link para o vídeo de até 8 minutos apresentando o projeto:  
+🔗 _[Adicione o link do vídeo aqui]_
+
+---
+
+## 👨‍💼 Contato
+
+- 📧 Email: edson.suasemail@exemplo.com (substitua)
+- 🔗 LinkedIn: [https://www.linkedin.com/in/edson-pereira-076309166/](https://www.linkedin.com/in/edson-pereira-076309166/)
