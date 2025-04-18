@@ -32,7 +32,7 @@ Site pessoal desenvolvido para a disciplina de **Prática Profissional em Análi
 ## 📹 Vídeo de Demonstração
 
 🖥️ Link para o vídeo de até 8 minutos apresentando o projeto:  
-🔗 _[Adicione o link do vídeo aqui]_
+🔗 (Assim que eu terminar a apresentação eu coloco)
 
 ---
 
