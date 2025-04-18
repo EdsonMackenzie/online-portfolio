@@ -38,5 +38,5 @@ Site pessoal desenvolvido para a disciplina de **Prática Profissional em Análi
 
 ## 👨‍💼 Contato
 
-- 📧 Email: edson.suasemail@exemplo.com (substitua)
+- 📧 Email: 10408686@mackenzista.com.br
 - 🔗 LinkedIn: [https://www.linkedin.com/in/edson-pereira-076309166/](https://www.linkedin.com/in/edson-pereira-076309166/)
