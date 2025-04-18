@@ -64,7 +64,7 @@ Acesse o código-fonte completo e os arquivos do projeto em:
 ## 📺 Vídeo Demonstrativo
 
 Assista à demonstração da aplicação em funcionamento:
-👉 [Inserir link do vídeo aqui]
+👉 https://youtu.be/ZnHnjO-3Jbg?si=_t3AFsDZBU4fow55
 
 ---
 
