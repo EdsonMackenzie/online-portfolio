@@ -36,20 +36,23 @@ Este projeto tem como objetivo criar um portfólio online pessoal com informaç�
 
 ## 📁 Estrutura de Arquivos
 
+```text
+.
 ├── index.html
-├── foto_perfil.jpg
-├── Edson Currículo.pdf
-├── README.md
-├── GUIA.md
-├── PortfolioProfissional.md
-├── Especificacao.md
-├── PlanoTesteCenario/
-│ ├── TST-001.md
-│ ├── TST-002.md
-│ └── ...
-
-
----
+├── assets/
+│   ├── img/
+│   │   └── foto_perfil.jpg
+│   └── pdf/
+│       └── edson_curriculo.pdf
+├── docs/
+│   ├── README.md
+│   ├── GUIA.md
+│   ├── portfolio_profissional.md
+│   └── especificacao.md
+└── testes/
+    ├── TST-001.md
+    ├── TST-002.md
+    └── ...
 
 ## 🔗 Hospedagem
 
