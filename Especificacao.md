@@ -35,17 +35,20 @@ Este projeto tem como objetivo criar um portfólio online pessoal com informaç�
 ---
 
 ## 📁 Estrutura de Arquivos
+
 ├── index.html
 ├── foto_perfil.jpg
 ├── Edson Currículo.pdf
 ├── README.md
 ├── GUIA.md
-├── PortifolioProfissional.md
+├── PortfolioProfissional.md
 ├── Especificacao.md
 ├── PlanoTesteCenario/
 │ ├── TST-001.md
 │ ├── TST-002.md
 │ └── ...
+
+
 ---
 
 ## 🔗 Hospedagem
@@ -64,5 +67,4 @@ Todos os testes de caso de uso foram documentados na pasta `PlanoTesteCenario`.
 ## 📌 Versão da Entrega
 
 Esta é a segunda iteração do projeto, identificada pela tag `v2` no repositório GitHub.
-
 
