@@ -12,6 +12,7 @@ Site pessoal desenvolvido para a disciplina de **Prática Profissional em Análi
 - CSS3
 - JavaScript
 - Git e GitHub
+- GitHub Pages (hospedagem)
 
 ---
 
@@ -26,17 +27,13 @@ Site pessoal desenvolvido para a disciplina de **Prática Profissional em Análi
 - [Guia do Usuário](https://github.com/EdsonMackenzie/online-portfolio/blob/main/GUIA.md)
 - [Currículo em PDF](https://github.com/EdsonMackenzie/online-portfolio/blob/main/Edson%20Curr%C3%ADculo.pdf)
 - [Diagrama de Implantação](https://github.com/EdsonMackenzie/online-portfolio/blob/main/diagrama_implantacao.png)
+- [Especificação Funcional](https://github.com/EdsonMackenzie/online-portfolio/blob/main/Especificacao.md)
+- [Plano de Testes](https://github.com/EdsonMackenzie/online-portfolio/tree/main/PlanoTesteCenario)
 
 ---
 
-## 📹 Vídeo de Demonstração
+## 🧠 Como Executar o Projeto Localmente
 
-🖥️ Link para o vídeo de até 8 minutos apresentando o projeto:  
-🔗 (Assim que eu terminar a apresentação eu coloco)
-
----
-
-## 👨‍💼 Contato
-
-- 📧 Email: 10408686@mackenzista.com.br
-- 🔗 LinkedIn: [https://www.linkedin.com/in/edson-pereira-076309166/](https://www.linkedin.com/in/edson-pereira-076309166/)
+1. Faça o download do repositório ou clone com Git:
+```bash
+git clone https://github.com/EdsonMackenzie/online-portfolio.git
